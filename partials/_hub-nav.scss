@@ -1,0 +1,92 @@
+// Style hub nav in here INSIDE mobile menu media query to overwrite TV2 breakpoint of 1336
+
+@media (min-width: $mobilebp) {
+  .uf-top-nav-container {
+    .uf-menu-background {
+      display: none;
+      .navbar-burger {
+        display: none;
+      }
+    }
+    .navbar-menu {
+      padding: 0;
+      display: flex;
+      box-shadow: none;
+      overflow-y: visible;
+      height: auto !important;
+
+      > li {
+        &.navbar-item {
+          padding: 0.2rem 0.75rem;
+        }
+
+        i {
+          font-size: 9px;
+        }
+
+        > a,
+        label,
+        button {
+          padding: 2px !important;
+          white-space: normal;
+          text-overflow: initial;
+          width: auto !important;
+          border: none !important;
+          color: inherit !important;
+          text-indent: 0 !important;
+          overflow: inherit !important;
+          font-size: 1.6rem !important;
+
+          &:after {
+            display: none; // hide the arrows on items that don't have dropdowns
+          }
+        }
+
+        > button {
+          padding: 0 6px !important;
+        }
+
+        .navbar-dropdown {
+          left: 0;
+          border-top: 0;
+          min-width: 250px;
+          max-width: 300px;
+          border-radius: 0 0 3px 3px;
+          transform: translateY(-0.2rem);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        &:hover,
+        &.is-selected,
+        &.is-hovered {
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+          button i {
+            transform: rotate(-180deg) !important;
+          }
+
+          .navbar-dropdown {
+            display: block;
+            position: absolute;
+            top: 100%;
+
+            li {
+              border: none;
+
+              a {
+                height: auto;
+                line-height: 1;
+                border-top: none;
+                color: #666;
+                padding: 1.4rem 1rem;
+                text-indent: 0 !important;
+                font-size: 1.6rem !important;
+                background-color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

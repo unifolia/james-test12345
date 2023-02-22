@@ -1,0 +1,52 @@
+/* --- Use to make changes back to top button --- */
+body #uf-back-to-top {
+  // To move button to right side
+  // left: unset;
+  // right: 20px;
+
+  // Sample button change below for arrow and circle container size.
+
+  // font-size: 1rem;
+  // line-height: 1;
+  // min-height: unset;
+  // height: 2.5rem;
+  // width: 2.5rem;
+}
+
+/**
+*	Bug Fixes
+*/
+
+/*-- Fix for "site engager" --*/
+body.ufw-viewer {
+  #injected-header,
+  #injected-footer {
+    display: none !important;
+  }
+}
+
+/*-- Hide header/footer on embed --*/
+
+#uf-embed-tile-page #injected-header,
+#uf-embed-tile-page #injected-footer {
+  display: none !important;
+}
+
+/*-- Fix tile clicks on mobile for android --*/
+
+@media all and (max-width: 600px) {
+  html body.disable-hover,
+  html body.disable-hover * {
+    pointer-events: initial !important;
+    pointer-events: unset !important;
+  }
+}
+
+.uf-top-nav-container.is-active #uf-hub-nav {
+  z-index: 999999999999 !important;
+}
+
+/*-- Ensure full screen ctas are always above injected header --*/
+.cta.full-screen-cta {
+  z-index: 999999999999999 !important;
+}

@@ -1,0 +1,36 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-a11y"],
+  defaultSeverity: "error",
+  "rules": {
+    "a11y/no-outline-none": true,
+    "a11y/no-spread-text": true,
+    "a11y/no-obsolete-attribute": true,
+    "a11y/no-obsolete-element": true,
+    "a11y/no-text-align-justify": true,
+    "shorthand-property-no-redundant-values": true,
+    "value-no-vendor-prefix": [true,
+      {
+        ignoreValues: [ "font-smoothing" ]
+      }
+    ],
+    "declaration-block-single-line-max-declarations": 1,
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "number-leading-zero": "always",
+    "unit-case": "lower",
+    "property-case": "lower",
+    "declaration-colon-space-after": "always",
+    "declaration-empty-line-before": "never",
+    "declaration-block-trailing-semicolon": "always",
+    "selector-attribute-operator-space-after": "never",
+    "selector-attribute-brackets-space-inside": "never",
+    "block-opening-brace-space-before": "always",
+    "selector-type-case": "lower",
+    "selector-list-comma-space-after": "always-single-line",
+    "media-feature-name-case": "lower",
+    "max-empty-lines": 5,
+    "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword": null,
+  }
+}

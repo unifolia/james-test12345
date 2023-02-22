@@ -1,0 +1,16 @@
+@import './brand-variables';
+/**
+ * This file is the entry point for clientEmbed.css,
+ * Clients can include this file on their website to get
+ * their embeded tiles to look like their onbrand!
+ **/
+
+/* Don't think webpackBuild is implemented yet */
+.uf-tile-wrapper {
+  // tile styles
+}
+
+.hubs-embedded .uf-tile-wrapper {
+  // making sure it's working
+  background-color: purple !important;
+}

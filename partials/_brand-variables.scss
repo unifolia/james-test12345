@@ -1,0 +1,27 @@
+//---------- THEME MACHINE BRANDING PALETTE ----------\\
+$brand1: #ed1a3b;   // var(--primary-color);  
+$brand2: #1e388e;  // var(--secondary-color);
+$text: #000000;     // var(--text-color);
+$headline: #000000; // var(--headline-color);
+$swap: #1e388e;// var(--swap-txt-color);
+$border: #ffffff;// var(--border-color);
+$body: #ffffff;// var(--body-color);
+$menubg:#ffffff;// var(--menu-bg-color);
+$menutxt: #000000;// var(--menu-txt-color);
+$button: #ed1a3b;// var(--btn-color);
+$cta: #ed1a3b;// var(--cta-color);
+$link: #1e388e;// var(--link-color);
+$font1: 'proxima-nova', Arial, Helvetica, sans-serif;// var(--primary-font-family);
+$font2: 'proxima-nova', Arial, Helvetica, sans-serif;// var(--secondary-font-family);
+
+//---------- CUSTOM BREAKPOINTS ---------\\
+// the max of each custom breakpoint (required if using .container snippet)
+$bp1: 1700px;
+$bp2: 1300px;
+$bp3: 1000px;
+$bp4: 550px;
+
+// mobile menu breakpoint (Themes V2 breakpoint is 1336px by default, the old theme was 860)
+$mobilebp: 860px;
+
+

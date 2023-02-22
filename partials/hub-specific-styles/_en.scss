@@ -1,0 +1,13 @@
+// language specific CSS
+//@import './partials/_sass-functions'; // uncomment this if you need the sass functions
+
+// making sure it's working
+/* change search button from a pink to something more universal on new hub build before adding customization */
+
+.uf-search-results-page .search-results {
+   .uf-button.is-primary, 
+   .uf-button.is-primary:hover  {
+     background-color: #514545;
+  }
+}
+

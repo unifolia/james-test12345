@@ -1,0 +1,24 @@
+// @import './partials/sass-functions'; // uncomment when you need to use the sass functions
+@import './partials/onbrand-boilerplate';
+@import './partials/brand-variables';
+// @import './partials/fonts'; //uncomment when you need to use fonts
+@import './partials/header';
+@import './partials/hub-nav';
+@import './partials/tile';
+@import './partials/footer';
+
+// --- Hey Onbrander, here are some functions you might find handy.
+// If you'd like to use them, uncomment the sass-functions import on the first line, or in the first line of the hub specific scss partial
+/* Functions & Mixins:
+ *
+ * [     findColorInvert(someColorHere)   ] =>  the most accesible color 
+ *												for text on that color background. 
+ *												EX: findColorInvert(black) = white;
+ *
+ * [     @include center('vertical')      ] =>  vertically centers element inside 
+ *												a relative parent. (also 'horizontal',
+ * 												and 'both'.)
+ *
+ * [     @extend %clearfix                ] =>  clearfixes the element 
+ *											without the need to add the class
+*/
